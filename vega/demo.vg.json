@@ -1,0 +1,23 @@
+{
+	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+	"description": "congressional full name and its square footage",
+	"data": {
+	  "url": "building_inventory.csv"
+	},
+	"mark": "bar",
+	"encoding": {
+	  "x": {
+		  "field": "Congressional Full Name", 
+		  "type": "nominal", 
+		  "axis": {
+			  "labelAngle": 60
+			  }
+			},
+	  "y": {
+		  "field": "Square Footage", 
+		  "aggregate": "sum",
+		  "type": "quantitative"
+		}
+	}
+  }
+  
