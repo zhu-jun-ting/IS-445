@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "data": {
+    "name": "counties",
+    "url": "data/us-10m.json",
+    "format": {"type": "topojson", "feature": "counties"}
+  },
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": 
+      }
+    }
+  ]
+  "projection": {
+    "type": "alberUsa"
+  },
+  "mark": "geoshape"
+}
